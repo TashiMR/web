@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* min-width: 250px; */
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+    list-style: none;
+    /* font-size: 8px; */
+}
+nav ul li{
+    box-shadow: 20px rgb(78, 3, 255);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 13px;
+    padding: 8px;
+    background-color: rgb(255, 138, 5);
+    font-weight: 900;
+    font-size: 3vw;
+}
+nav ul li:hover{
+    /* box-shadow: yellow; */
+    background-color: red;
+    font-size: 6vw;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+.main_img img{
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 170px;
+}
+.main_img{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blue; */
+}
+.links{
+    background-color: aqua;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 13px;
+}
+.links h2{
+    align-self: flex-start;
+    border-radius: 13px;
+    padding: 10px;
+    background-color: rgb(3, 228, 228);
+    /* justify-self: start; */
+}
+.links ul{
+    /* text-decoration: none; */
+    list-style: none;
+    font-size: 20px;
+}
+.links li{
+    font-size: 20px;
+}
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color:red;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5vw;
+}
+@media only screen and (max-width: 360px) {
+    nav ul li{
+        padding: 8px;
+
+        /* background-color: aqua; */
+    }
+    nav ul li:hover{
+        font-size: 3vw;
+
+    }
+    nav ul{
+        column-gap: 3px;
+    }
+    .links h2{
+        font-size: 4vw;
+
+    }
+    .links li{
+        font-size: 3vw;
+    }
+}
