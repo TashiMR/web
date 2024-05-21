@@ -3,15 +3,64 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(images/webbackground.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.glow{
+    animation:spin 4s linear infinite;
+    /* background-color: red; */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 60px violet,
+        inset -20px 0 60px blue,
+        inset 20px 0 300px violet,
+        inset -20px 0 300px blue,
+          0 0 50px #fff,
+          -10px 0 60px violet,
+          10px 0 60px blue;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.top{
+    /* position: relative; */
+    border-radius: 70px;
+    background-image: url(images/goto.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top a{
+    color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+
+}
 .links ul{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     list-style-position: inside;
+    color: white;
 }
 .links ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 900;
     font-size: 1.5vw;
 }
 .links{
@@ -23,6 +72,10 @@
     list-style-position: inside;
 }
 .sbox{
+    background-image: url(images/testing.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
     /* background-color: rgb(27, 63, 63); */
     width: 25vw;
     height: 70vh;
