@@ -59,7 +59,6 @@ body{
 }
 .links ul li{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .links ul li a{
@@ -156,7 +155,7 @@ nav{
 nav ul{
     display: flex;
     column-gap: 10px;
-    justify-content: end;
+    justify-content: space-around;
     list-style: none;
 
 }
