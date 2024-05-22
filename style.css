@@ -4,9 +4,10 @@
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images/webbackground.jpg);
+    background-image: url(images/testing.jpg);
     background-position: center;
     background-size: contain;
+    background-color: grey;
 }
 .glow{
     animation:spin 4s linear infinite;
@@ -50,20 +51,24 @@ body{
     font-size: 25px;
 
 }
+
+.linkbox a{
+
+}
 .links ul{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    list-style-position: inside;
     color: white;
 }
 .links ul li{
+    margin-top: 5px;
     display: flex;
     align-items: center;
 }
 .links ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 1.5vw;
 }
@@ -79,11 +84,10 @@ body{
     width: 2vmax;
 }
 .sbox{
-    background-image: url(images/testing.jpg);
-    background-size: cover;
+    background-image: url(images/sboxtexture.jpg);
     background-position: center;
-    /* background-repeat: no-repeat; */
-    /* background-color: rgb(27, 63, 63); */
+    background-size: contain;
+    background-color:burlywood;
     width: 25vw;
     height: 70vh;
     border: 2px solid black;
@@ -99,7 +103,7 @@ body{
     margin-top: 10px;
     background-color: transparent;
     font-size: 3vw;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .main{
     column-gap: 40px;
@@ -224,11 +228,20 @@ nav ul li:hover{
     }
     .sbox{
         border-radius: 10px;
-        width: 30vw;
+        width: 80vw;
         height: 40vw;
         /* row-gap: 20px; */
     }
     .chemistry_chapterwise{
         width: 80vw;
+    }
+    .linkbox{
+        align-self: flex-start;
+    }
+    .sbox h2{
+        font-size: 4vw;
+    }
+    .linkbox ul li a{
+        font-size: 3vw;
     }
 }
