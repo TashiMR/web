@@ -1,247 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+.nav{
+    /* background-color: gray; */
+    font-weight: 500;
+    color: black;
 }
-body{
-    background-image: url(images/testing.jpg);
-    background-position: center;
-    background-size: contain;
-    background-color: grey;
+.subject{
+    font-size: 29px;
 }
-.glow{
-    animation:spin 4s linear infinite;
-    /* background-color: red; */
-    border-radius: 50%;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 80px;
-    height: 80px;
+.sub_name{
+    max-width: fit-content;
+    margin: 0px auto;
+    font-size: 45px;
+    font-weight: 600;
+}
+.sub_name_t{
+    margin: 0 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+/* .mt-4{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow:
-        inset 0 0 50px #fff,
-        inset 20px 0 60px violet,
-        inset -20px 0 60px blue,
-        inset 20px 0 300px violet,
-        inset -20px 0 300px blue,
-          0 0 50px #fff,
-          -10px 0 60px violet,
-          10px 0 60px blue;
-}
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-.top{
-    /* position: relative; */
-    border-radius: 70px;
-    background-image: url(images/goto.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.top a{
-    color: transparent;
-    text-decoration: none;
-    font-size: 25px;
-
-}
-
-.linkbox a{
-
-}
-.links ul{
+} */
+.block_sub{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    color: white;
-}
-.links ul li{
-    margin-top: 5px;
-    display: flex;
     align-items: center;
-}
-.links ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    font-size: 1.5vw;
-}
-.links{
-    overflow: auto;
-}
-.chwise_links{
-    margin-left: 10px;
-    align-self: flex-start;
-    list-style-position: inside;
-}
-.pdf{
-    width: 2vmax;
-}
-.sbox{
-    background-image: url(images/sboxtexture.jpg);
-    background-position: center;
-    background-size: contain;
-    background-color:burlywood;
-    width: 25vw;
-    height: 70vh;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: top; */
-    align-items: center;
-    border-radius: 30px;
-}
-.sbox h2{
-    padding: 10px;
-    border-radius: 13px;
-    margin-top: 10px;
-    background-color: transparent;
-    font-size: 3vw;
-    color: rgb(0, 0, 0);
-}
-.main{
-    column-gap: 40px;
-    row-gap: 40px;
-    margin-top: 30px;
-    display: flex;
     justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    /* flex-wrap: wrap; */
 }
-.subjects{
-    display: flex;
-    column-gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.about a{
-    text-decoration: none;
-    border-radius: 13px;
-    padding: 10px;
-    color: white;
-    animation-name: about;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0ms;
-    animation-iteration-count: infinite;
-}
-@keyframes about {
-    0%{
-        background-color: springgreen;
-
-    }
-    100%{
-        background-color: transparent;
-    }
-    
-}
-nav{
-    position: sticky;
-    top: 0px;
-    left: 2px;
-    background-color: black;
-    /* border-radius: 30px; */
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 98vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-sizing: border-box;
-}
-nav ul{
-    display: flex;
-    column-gap: 10px;
-    justify-content: space-around;
-    list-style: none;
-
-}
-nav ul li{
-    padding: 10px;
-    border: 5px solid black;
-    border-radius: 13px;
-    color: white;
-    font-size: 2vw;
-    font-weight: 900;
-}
-nav ul li:hover{
-    box-sizing: border-box;
-    border: 5px solid red;
-    animation-name: lihover,lifonthover;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-.chemistry_chapterwise{
-    align-self: center;
-    justify-self: center;
-    width: 80vw;
-}
-@keyframes lifonthover {
-    0%{
-        color: white;
-    }
-    30%{
-        color: rgb(163, 3, 255);
-    }
-    60%{
-        color: red;
-    }
-    90%{
-        color: rgb(238, 255, 0);
-    }
-    
-}
-@keyframes lihover {
-    0%{
-        border-color: red;
-    }
-    30%{
-        border-color: rgb(87, 17, 17);
-    }
-    60%{
-        border-color: rgb(3, 3, 36);
-    }
-    90%{
-        border-color: blue;
-    }
-    100%{
-        border-color: red;
-    }
-}
-@media screen and (max-width: 800px) {
-    .main{
-        flex-direction: column;
-        row-gap: 30px;
-    }
-    .subjects{
-        flex-direction: column;
-        row-gap: 20px;
-    }
-    .sbox{
-        border-radius: 10px;
-        width: 80vw;
-        height: 40vw;
-        /* row-gap: 20px; */
-    }
-    .chemistry_chapterwise{
-        width: 80vw;
-    }
-    .linkbox{
-        align-self: flex-start;
-    }
-    .sbox h2{
-        font-size: 4vw;
-    }
-    .linkbox ul li a{
-        font-size: 3vw;
+@media (min-width: 1024px) {
+    .lg\:w-1\/4 {
+        width: 20%;
     }
 }
